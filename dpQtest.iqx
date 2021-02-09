@@ -1,0 +1,877 @@
+﻿
+----- Some default settings -----
+<defaults>
+/screencolor = black
+/ canvasaspectratio = (4,3)
+/ canvassize = (100%, 100%)
+</defaults>
+
+<text QuestionNumberReminderDPDR>
+/ items = ("You are at <%values.QCounter%> of 29 questions")
+/ fontstyle = ("Arial", 2.5%)
+/ txbgcolor = black
+/ position = (50%, 5%)
+/ color = orange
+</text>
+
+----- Question Counter ----
+<values Q_Number>
+/ QCounter = 1
+</values>
+
+<surveypage instCDQ>
+/ caption = "PLEASE READ THE INSTRUCTIONS CAREFULLY:
+"
+/ fontstyle = ("Arial", 3%, false, false, false, false, 5, 1))
+/ subcaption = "This questionnaire describes strange and ‘funny’ experiences that normal people may have in their daily life.
+ 
+We are interested in their: 
+(a) frequency, i.e. how often have you had these experiences OVER THE LAST SIX MONTHS
+ 
+and (b) their approximate duration
+
+For each question, please circle the answers that suit you best. 
+
+If you are not sure, give your best guess.
+"
+/ subcaptionfontstyle = ("Arial", 3.5%, true, false, false, false, 5, 1))
+/ txcolor = orange
+/ showquestionnumbers = false
+/ showpagenumbers = false
+</surveypage>		
+
+			
+
+----- Drop down boxes to reflect CDS questions (same order) -----
+
+<radiobuttons frequency_1> // Feeling unreal or cut off from the world 
+/ caption = "Out of the blue, I feel strange, as if I were not real or as if I were cut off from the world."
+/ options = ("Never","Rarely","Often","Very Often","All the Time")
+/ optionvalues = ("0","1","2","3","4")
+/ required = true
+/ orientation = horizontalequal
+/ position = (1%, 25%)
+</radiobuttons>
+
+<radiobuttons duration_1>  // Feeling unreal or cut off from the world 
+/ caption = " In general, it lasts:"
+/ options = ("Not Applicable","A Few Seconds", "A Few Minutes","A Few Hours","About a Day","More Than a Day", "More Than a Week")
+/ optionvalues = ("0","1","2","3","4","5","6")
+/ required = true
+/ orientation = horizontalequal
+/ position = (1%, 50%)
+</radiobuttons>
+
+<radiobuttons frequency_2> // Things look flat, as if looking at a picture
+/ caption = "What I see looks ‘flat’ or ‘lifeless’, as if I were looking at a picture."
+/ options = ("Never","Rarely","Often","Very Often","All the Time")
+/ optionvalues = ("0","1","2","3","4")
+/ required = true
+/ orientation = horizontalequal
+/ position = (1%, 25%)
+</radiobuttons>
+
+<radiobuttons duration_2> // Things look flat, as if looking at a picture
+/ caption = " In general, it lasts:"
+/ options = ("Not Applicable","A Few Seconds", "A Few Minutes","A Few Hours","About a Day","More Than a Day", "More Than a Week")
+/ optionvalues = ("0","1","2","3","4","5","6")
+/ required = true
+/ orientation = horizontalequal
+/ position = (1%, 50%)
+</radiobuttons>
+
+<radiobuttons frequency_3> // Body feels as if it didn’t belong to oneself
+/ caption = "Parts of my body feel as if they didn’t belong to me."
+/ options = ("Never","Rarely","Often","Very Often","All the Time")
+/ optionvalues = ("0","1","2","3","4")
+/ required = true
+/ orientation = horizontalequal
+/ position = (1%, 25%)
+</radiobuttons>
+
+<radiobuttons duration_3> // Body feels as if it didn’t belong to oneself
+/ caption = " In general, it lasts:"
+/ options = ("Not Applicable","A Few Seconds", "A Few Minutes","A Few Hours","About a Day","More Than a Day", "More Than a Week")
+/ optionvalues = ("0","1","2","3","4","5","6")
+/ required = true
+/ orientation = horizontalequal
+/ position = (1%, 50%)
+</radiobuttons>
+
+<radiobuttons frequency_4> // Not feeling frightened in normally frightening situations
+/ caption = "I have found myself not being frightened at all in situations which normally I would find frightening or distressing."
+/ options = ("Never","Rarely","Often","Very Often","All the Time")
+/ optionvalues = ("0","1","2","3","4")
+/ required = true
+/ orientation = horizontalequal
+/ position = (1%, 25%)
+</radiobuttons>
+
+<radiobuttons duration_4> // Not feeling frightened in normally frightening situations
+/ caption = " In general, it lasts:"
+/ options = ("Not Applicable","A Few Seconds", "A Few Minutes","A Few Hours","About a Day","More Than a Day", "More Than a Week")
+/ optionvalues = ("0","1","2","3","4","5","6")
+/ required = true
+/ orientation = horizontalequal
+/ position = (1%, 50%)
+</radiobuttons>
+
+<radiobuttons frequency_5> // Favourite activities no longer enjoyable
+/ caption = "My favourite activities are no longer enjoyable."
+/ options = ("Never","Rarely","Often","Very Often","All the Time")
+/ optionvalues = ("0","1","2","3","4")
+/ required = true
+/ orientation = horizontalequal
+/ position = (1%, 25%)
+</radiobuttons>
+
+<radiobuttons duration_5> // Favourite activities no longer enjoyable
+/ caption = " In general, it lasts:"
+/ options = ("Not Applicable","A Few Seconds", "A Few Minutes","A Few Hours","About a Day","More Than a Day", "More Than a Week")
+/ optionvalues = ("0","1","2","3","4","5","6")
+/ required = true
+/ orientation = horizontalequal
+/ position = (1%, 50%)
+</radiobuttons>
+
+<radiobuttons frequency_6> // Feeling of being a detached observer of oneself
+/ caption = "Whilst doing something I have the feeling of being a ‘detached observer’ of myself."
+/ options = ("Never","Rarely","Often","Very Often","All the Time")
+/ optionvalues = ("0","1","2","3","4")
+/ required = true
+/ orientation = horizontalequal
+/ position = (1%, 25%)
+</radiobuttons>
+
+<radiobuttons duration_6> // Feeling of being a detached observer of oneself
+/ caption = " In general, it lasts:"
+/ options = ("Not Applicable","A Few Seconds", "A Few Minutes","A Few Hours","About a Day","More Than a Day", "More Than a Week")
+/ optionvalues = ("0","1","2","3","4","5","6")
+/ required = true
+/ orientation = horizontalequal
+/ position = (1%, 50%)
+</radiobuttons>
+
+<radiobuttons frequency_7> // Flavour of meals no longer gives a feeling of pleasure or distaste
+/ caption = "The flavour of meals no longer gives me a feeling of pleasure or distaste."
+/ options = ("Never","Rarely","Often","Very Often","All the Time")
+/ optionvalues = ("0","1","2","3","4")
+/ required = true
+/ orientation = horizontalequal
+/ position = (1%, 25%)
+</radiobuttons>
+
+<radiobuttons duration_7> // Flavour of meals no longer gives a feeling of pleasure or distaste
+/ caption = " In general, it lasts:"
+/ options = ("Not Applicable","A Few Seconds", "A Few Minutes","A Few Hours","About a Day","More Than a Day", "More Than a Week")
+/ optionvalues = ("0","1","2","3","4","5","6")
+/ required = true
+/ orientation = horizontalequal
+/ position = (1%, 50%)
+</radiobuttons>
+
+<radiobuttons frequency_8> // Body feels very light, as if it were floating on air
+/ caption = "My body feels very light, as if it were floating on air."
+/ options = ("Never","Rarely","Often","Very Often","All the Time")
+/ optionvalues = ("0","1","2","3","4")
+/ required = true
+/ orientation = horizontalequal
+/ position = (1%, 25%)
+</radiobuttons>
+
+<radiobuttons duration_8> // Body feels very light, as if it were floating on air
+/ caption = " In general, it lasts:"
+/ options = ("Not Applicable","A Few Seconds", "A Few Minutes","A Few Hours","About a Day","More Than a Day", "More Than a Week")
+/ optionvalues = ("0","1","2","3","4","5","6")
+/ required = true
+/ orientation = horizontalequal
+/ position = (1%, 50%)
+</radiobuttons>
+
+<radiobuttons frequency_9> // No emotions felt when weeping or laughing
+/ caption = "When I weep or laugh, I do not seem to feel any emotions at all."
+/ options = ("Never","Rarely","Often","Very Often","All the Time")
+/ optionvalues = ("0","1","2","3","4")
+/ required = true
+/ orientation = horizontalequal
+/ position = (1%, 25%)
+</radiobuttons>
+
+<radiobuttons duration_9> // No emotions felt when weeping or laughing
+/ caption = " In general, it lasts:"
+/ options = ("Not Applicable","A Few Seconds", "A Few Minutes","A Few Hours","About a Day","More Than a Day", "More Than a Week")
+/ optionvalues = ("0","1","2","3","4","5","6")
+/ required = true
+/ orientation = horizontalequal
+/ position = (1%, 50%)
+</radiobuttons>
+
+<radiobuttons frequency_10> // Feeling of not having any thoughts at all
+/ caption = "I have the feeling of not having any thoughts at all, so that when I speak it feels as if my words were being uttered by an ‘automaton’."
+/ options = ("Never","Rarely","Often","Very Often","All the Time")
+/ optionvalues = ("0","1","2","3","4")
+/ required = true
+/ orientation = horizontalequal
+/ position = (1%, 25%)
+</radiobuttons>
+
+<radiobuttons duration_10> // Feeling of not having any thoughts at all
+/ caption = " In general, it lasts:"
+/ options = ("Not Applicable","A Few Seconds", "A Few Minutes","A Few Hours","About a Day","More Than a Day", "More Than a Week")
+/ optionvalues = ("0","1","2","3","4","5","6")
+/ required = true
+/ orientation = horizontalequal
+/ position = (1%, 50%)
+</radiobuttons>
+
+<radiobuttons frequency_11> // Own voice sounds more remote and unreal
+/ caption = "Familiar voices (including my own sound) remote and unreal."
+/ options = ("Never","Rarely","Often","Very Often","All the Time")
+/ optionvalues = ("0","1","2","3","4")
+/ required = true
+/ orientation = horizontalequal
+/ position = (1%, 25%)
+</radiobuttons>
+
+<radiobuttons duration_11> // Own voice sounds more remote and unreal
+/ caption = " In general, it lasts:"
+/ options = ("Not Applicable","A Few Seconds", "A Few Minutes","A Few Hours","About a Day","More Than a Day", "More Than a Week")
+/ optionvalues = ("0","1","2","3","4","5","6")
+/ required = true
+/ orientation = horizontalequal
+/ position = (1%, 50%)
+</radiobuttons>
+
+<radiobuttons frequency_12> // Feel like hands or feet becoming bigger or smaller
+/ caption = "I have the feeling that my hands or my feet have become larger or smaller."
+/ options = ("Never","Rarely","Often","Very Often","All the Time")
+/ optionvalues = ("0","1","2","3","4")
+/ required = true
+/ orientation = horizontalequal
+/ position = (1%, 25%)
+</radiobuttons>
+
+<radiobuttons duration_12> // Feel like hands or feet becoming bigger or smaller
+/ caption = " In general, it lasts:"
+/ options = ("Not Applicable","A Few Seconds", "A Few Minutes","A Few Hours","About a Day","More Than a Day", "More Than a Week")
+/ optionvalues = ("0","1","2","3","4","5","6")
+/ required = true
+/ orientation = horizontalequal
+/ position = (1%, 50%)
+</radiobuttons>
+
+<radiobuttons frequency_13> // Feel like hands or feet becoming bigger or smaller
+/ caption = "My surroundings feel detached or unreal, as if there were a veil between me and the outside world."
+/ options = ("Never","Rarely","Often","Very Often","All the Time")
+/ optionvalues = ("0","1","2","3","4")
+/ required = true
+/ orientation = horizontalequal
+/ position = (1%, 25%)
+</radiobuttons>
+
+<radiobuttons duration_13> // Feel like hands or feet becoming bigger or smaller
+/ caption = " In general, it lasts:"
+/ options = ("Not Applicable","A Few Seconds", "A Few Minutes","A Few Hours","About a Day","More Than a Day", "More Than a Week")
+/ optionvalues = ("0","1","2","3","4","5","6")
+/ required = true
+/ orientation = horizontalequal
+/ position = (1%, 50%)
+</radiobuttons>
+
+<radiobuttons frequency_14> // Recently done things feel as if they took place a long time ago
+/ caption = "It seems as if things that I have recently done had taken place a long time ago. For example, anything which I have done this morning feels as if it were done weeks ago."
+/ options = ("Never","Rarely","Often","Very Often","All the Time")
+/ optionvalues = ("0","1","2","3","4")
+/ required = true
+/ orientation = horizontalequal
+/ position = (1%, 25%)
+</radiobuttons>
+
+<radiobuttons duration_14> // Recently done things feel as if they took place a long time ago
+/ caption = " In general, it lasts:"
+/ options = ("Not Applicable","A Few Seconds", "A Few Minutes","A Few Hours","About a Day","More Than a Day", "More Than a Week")
+/ optionvalues = ("0","1","2","3","4","5","6")
+/ required = true
+/ orientation = horizontalequal
+/ position = (1%, 50%)
+</radiobuttons>
+
+<radiobuttons frequency_15> // See oneself outside, as if looking in a mirror
+/ caption = "Whilst fully awake I have ‘visions’ in which I can see myself outside, as if I were looking my image in a mirror."
+/ options = ("Never","Rarely","Often","Very Often","All the Time")
+/ optionvalues = ("0","1","2","3","4")
+/ required = true
+/ orientation = horizontalequal
+/ position = (1%, 25%)
+</radiobuttons>
+
+<radiobuttons duration_15> // See oneself outside, as if looking in a mirror
+/ caption = " In general, it lasts:"
+/ options = ("Not Applicable","A Few Seconds", "A Few Minutes","A Few Hours","About a Day","More Than a Day", "More Than a Week")
+/ optionvalues = ("0","1","2","3","4","5","6")
+/ required = true
+/ orientation = horizontalequal
+/ position = (1%, 50%)
+</radiobuttons>
+
+<radiobuttons frequency_16> // Personal memories feel as if one had not been involved in them
+/ caption = "I feel detached from memories of things that have happened to me - as if I had not been involved in them."
+/ options = ("Never","Rarely","Often","Very Often","All the Time")
+/ optionvalues = ("0","1","2","3","4")
+/ required = true
+/ orientation = horizontalequal
+/ position = (1%, 25%)
+</radiobuttons>
+
+<radiobuttons duration_16> // Personal memories feel as if one had not been involved in them
+/ caption = " In general, it lasts:"
+/ options = ("Not Applicable","A Few Seconds", "A Few Minutes","A Few Hours","About a Day","More Than a Day", "More Than a Week")
+/ optionvalues = ("0","1","2","3","4","5","6")
+/ required = true
+/ orientation = horizontalequal
+/ position = (1%, 50%)
+</radiobuttons>
+
+<radiobuttons frequency_17> // When in a new situation, feeling as if it happened before 
+/ caption = "When in a new situation, it feels as if I have been through it before."
+/ options = ("Never","Rarely","Often","Very Often","All the Time")
+/ optionvalues = ("0","1","2","3","4")
+/ required = true
+/ orientation = horizontalequal
+/ position = (1%, 25%)
+</radiobuttons>
+
+<radiobuttons duration_17> // When in a new situation, feeling as if it happened before 
+/ caption = " In general, it lasts:"
+/ options = ("Not Applicable","A Few Seconds", "A Few Minutes","A Few Hours","About a Day","More Than a Day", "More Than a Week")
+/ optionvalues = ("0","1","2","3","4","5","6")
+/ required = true
+/ orientation = horizontalequal
+/ position = (1%, 50%)
+</radiobuttons>
+
+<radiobuttons frequency_18> // Unable to feel affection towards family and friends 
+/ caption = "Out of the blue, I find myself not feeling any affection towards my family and close friends."
+/ options = ("Never","Rarely","Often","Very Often","All the Time")
+/ optionvalues = ("0","1","2","3","4")
+/ required = true
+/ orientation = horizontalequal
+/ position = (1%, 25%)
+</radiobuttons>
+
+<radiobuttons duration_18> // Unable to feel affection towards family and friends 
+/ caption = " In general, it lasts:"
+/ options = ("Not Applicable","A Few Seconds", "A Few Minutes","A Few Hours","About a Day","More Than a Day", "More Than a Week")
+/ optionvalues = ("0","1","2","3","4","5","6")
+/ required = true
+/ orientation = horizontalequal
+/ position = (1%, 50%)
+</radiobuttons>
+
+
+<radiobuttons frequency_19> // Objects look smaller or further away
+/ caption = "Objects around me seem to look smaller or further away."
+/ options = ("Never","Rarely","Often","Very Often","All the Time")
+/ optionvalues = ("0","1","2","3","4")
+/ required = true
+/ orientation = horizontalequal
+/ position = (1%, 25%)
+</radiobuttons>
+
+<radiobuttons duration_19> // Objects look smaller or further away
+/ caption = " In general, it lasts:"
+/ options = ("Not Applicable","A Few Seconds", "A Few Minutes","A Few Hours","About a Day","More Than a Day", "More Than a Week")
+/ optionvalues = ("0","1","2","3","4","5","6")
+/ required = true
+/ orientation = horizontalequal
+/ position = (1%, 50%)
+</radiobuttons>
+
+<radiobuttons frequency_20> // Unable to feel properly things touched with hands
+/ caption = "I cannot feel properly the objects that I touch with my hands for it feels as if it were not me who were touching it."
+/ options = ("Never","Rarely","Often","Very Often","All the Time")
+/ optionvalues = ("0","1","2","3","4")
+/ required = true
+/ orientation = horizontalequal
+/ position = (1%, 25%)
+</radiobuttons>
+
+
+<radiobuttons duration_20> // Unable to feel properly things touched with hands
+/ caption = " In general, it lasts:"
+/ options = ("Not Applicable","A Few Seconds", "A Few Minutes","A Few Hours","About a Day","More Than a Day", "More Than a Week")
+/ optionvalues = ("0","1","2","3","4","5","6")
+/ required = true
+/ orientation = horizontalequal
+/ position = (1%, 50%)
+</radiobuttons>
+
+<radiobuttons frequency_21> // Unable to picture things in mind
+/ caption = "I do not seem able to picture things in my mind, for example, the face of a close friend or a familiar place."
+/ options = ("Never","Rarely","Often","Very Often","All the Time")
+/ optionvalues = ("0","1","2","3","4")
+/ required = true
+/ orientation = horizontalequal
+/ position = (1%, 25%)
+</radiobuttons>
+
+<radiobuttons duration_21> // Unable to picture things in mind
+/ caption = " In general, it lasts:"
+/ options = ("Not Applicable","A Few Seconds", "A Few Minutes","A Few Hours","About a Day","More Than a Day", "More Than a Week")
+/ optionvalues = ("0","1","2","3","4","5","6")
+/ required = true
+/ orientation = horizontalequal
+/ position = (1%, 50%)
+</radiobuttons>
+
+<radiobuttons frequency_22> // Feeling detached from bodily pain
+/ caption = "When a part of my body hurts, I feel so detached from the pain that if feels as if it were ‘somebody else’s pain’."
+/ options = ("Never","Rarely","Often","Very Often","All the Time")
+/ optionvalues = ("0","1","2","3","4")
+/ required = true
+/ orientation = horizontalequal
+/ position = (1%, 25%)
+</radiobuttons>
+
+<radiobuttons duration_22> // Feeling detached from bodily pain
+/ caption = " In general, it lasts:"
+/ options = ("Not Applicable","A Few Seconds", "A Few Minutes","A Few Hours","About a Day","More Than a Day", "More Than a Week")
+/ optionvalues = ("0","1","2","3","4","5","6")
+/ required = true
+/ orientation = horizontalequal
+/ position = (1%, 50%)
+</radiobuttons>
+
+<radiobuttons frequency_23> // Feeling of being outside the body
+/ caption = "I have the feeling of being outside my body."
+/ options = ("Never","Rarely","Often","Very Often","All the Time")
+/ optionvalues = ("0","1","2","3","4")
+/ required = true
+/ orientation = horizontalequal
+/ position = (1%, 25%)
+</radiobuttons>
+
+<radiobuttons duration_23> // Feeling of being outside the body
+/ caption = " In general, it lasts:"
+/ options = ("Not Applicable","A Few Seconds", "A Few Minutes","A Few Hours","About a Day","More Than a Day", "More Than a Week")
+/ optionvalues = ("0","1","2","3","4","5","6")
+/ required = true
+/ orientation = horizontalequal
+/ position = (1%, 50%)
+</radiobuttons>
+
+<radiobuttons frequency_24> // Feeling mechanical and ‘robotic’ when moving
+/ caption = "When I move it doesn’t feel as if I were in charge of the movements, so that I feel ‘automatic’ and mechanical as if I were a ‘robot’."
+/ options = ("Never","Rarely","Often","Very Often","All the Time")
+/ optionvalues = ("0","1","2","3","4")
+/ required = true
+/ orientation = horizontalequal
+/ position = (1%, 25%)
+</radiobuttons>
+
+<radiobuttons duration_24> // Feeling mechanical and ‘robotic’ when moving
+/ caption = " In general, it lasts:"
+/ options = ("Not Applicable","A Few Seconds", "A Few Minutes","A Few Hours","About a Day","More Than a Day", "More Than a Week")
+/ optionvalues = ("0","1","2","3","4","5","6")
+/ required = true
+/ orientation = horizontalequal
+/ position = (1%, 50%)
+</radiobuttons>
+
+<radiobuttons frequency_25> // Smell of things no longer gives feeling of pleasure or dislike 
+/ caption = "The smell of things no longer gives me a feeling of pleasure or dislike."
+/ options = ("Never","Rarely","Often","Very Often","All the Time")
+/ optionvalues = ("0","1","2","3","4")
+/ required = true
+/ orientation = horizontalequal
+/ position = (1%, 25%)
+</radiobuttons>
+
+<radiobuttons duration_25> // Smell of things no longer gives feeling of pleasure or dislike 
+/ caption = " In general, it lasts:"
+/ options = ("Not Applicable","A Few Seconds", "A Few Minutes","A Few Hours","About a Day","More Than a Day", "More Than a Week")
+/ optionvalues = ("0","1","2","3","4","5","6")
+/ required = true
+/ orientation = horizontalequal
+/ position = (1%, 50%)
+</radiobuttons>
+
+<radiobuttons frequency_26> // Detached from own thoughts like they have a life of their own 
+/ caption = "I feel so detached from my thoughts that they seem to have a ‘life’ of their own."
+/ options = ("Never","Rarely","Often","Very Often","All the Time")
+/ optionvalues = ("0","1","2","3","4")
+/ required = true
+/ orientation = horizontalequal
+/ position = (1%, 25%)
+</radiobuttons>
+
+<radiobuttons duration_26> // Detached from own thoughts like they have a life of their own 
+/ caption = " In general, it lasts:"
+/ options = ("Not Applicable","A Few Seconds", "A Few Minutes","A Few Hours","About a Day","More Than a Day", "More Than a Week")
+/ optionvalues = ("0","1","2","3","4","5","6")
+/ required = true
+/ orientation = horizontalequal
+/ position = (1%, 50%)
+</radiobuttons>
+
+<radiobuttons frequency_27> // Urge to touch oneself to be reassured of body existence
+/ caption = "I have to touch myself to make sure that I have a body or a real existence."
+/ options = ("Never","Rarely","Often","Very Often","All the Time")
+/ optionvalues = ("0","1","2","3","4")
+/ required = true
+/ orientation = horizontalequal
+/ position = (1%, 25%)
+</radiobuttons>
+
+<radiobuttons duration_27> // Urge to touch oneself to be reassured of body existence
+/ caption = " In general, it lasts:"
+/ options = ("Not Applicable","A Few Seconds", "A Few Minutes","A Few Hours","About a Day","More Than a Day", "More Than a Week")
+/ optionvalues = ("0","1","2","3","4","5","6")
+/ required = true
+/ orientation = horizontalequal
+/ position = (1%, 50%)
+</radiobuttons>
+
+<radiobuttons frequency_28> // Unable to feel hunger or thirst
+/ caption = "I seem to have lost some bodily sensations e.g. of hunger and thirst so that when I eat or drink, it feels an automatic routine."
+/ options = ("Never","Rarely","Often","Very Often","All the Time")
+/ optionvalues = ("0","1","2","3","4")
+/ required = true
+/ orientation = horizontalequal
+/ position = (1%, 25%)
+</radiobuttons>
+
+<radiobuttons duration_28> // Unable to feel hunger or thirst
+/ caption = " In general, it lasts:"
+/ options = ("Not Applicable","A Few Seconds", "A Few Minutes","A Few Hours","About a Day","More Than a Day", "More Than a Week")
+/ optionvalues = ("0","1","2","3","4","5","6")
+/ required = true
+/ orientation = horizontalequal
+/ position = (1%, 50%)
+</radiobuttons>
+
+<radiobuttons frequency_29> // Previously familiar places look unfamiliar
+/ caption = "Previously familiar places look unfamiliar, as if I had never seen them before."
+/ options = ("Never","Rarely","Often","Very Often","All the Time")
+/ optionvalues = ("0","1","2","3","4")
+/ required = true
+/ orientation = horizontalequal
+/ position = (1%, 25%)
+</radiobuttons>
+
+<radiobuttons duration_29> // Previously familiar places look unfamiliar
+/ caption = " In general, it lasts:"
+/ options = ("Not Applicable","A Few Seconds", "A Few Minutes","A Few Hours","About a Day","More Than a Day", "More Than a Week")
+/ optionvalues = ("0","1","2","3","4","5","6")
+/ required = true
+/ orientation = horizontalequal
+/ position = (1%, 50%)
+</radiobuttons>
+
+
+<surveypage Q1>
+/ questions = [1 = frequency_1; 2 = duration_1]
+/ txcolor = orange
+/ stimulusframes = [1 = QuestionNumberReminderDPDR]
+/ ontrialend = [
+	values.QCounter += 1
+]
+</surveypage>
+
+<surveypage Q2>
+/ questions = [1 = frequency_2; 2 = duration_2]
+/ txcolor = orange
+/ stimulusframes = [1 = QuestionNumberReminderDPDR]
+/ ontrialend = [
+	values.QCounter += 1
+]
+</surveypage>
+
+<surveypage Q3>
+/ questions = [1 = frequency_3; 2 = duration_3]
+/ txcolor = orange
+/ stimulusframes = [1 = QuestionNumberReminderDPDR]
+/ ontrialend = [
+	values.QCounter += 1
+]
+</surveypage>
+
+<surveypage Q4>
+/ questions = [1 = frequency_4; 2 = duration_4]
+/ txcolor = orange
+/ stimulusframes = [1 = QuestionNumberReminderDPDR]
+/ ontrialend = [
+	values.QCounter += 1
+]
+</surveypage>
+
+<surveypage Q5>
+/ questions = [1 = frequency_5; 2 = duration_5]
+/ txcolor = orange
+/ stimulusframes = [1 = QuestionNumberReminderDPDR]
+/ ontrialend = [
+	values.QCounter += 1
+]
+</surveypage>
+
+<surveypage Q6>
+/ questions = [1 = frequency_6; 2 = duration_6]
+/ txcolor = orange
+/ stimulusframes = [1 = QuestionNumberReminderDPDR]
+/ ontrialend = [
+	values.QCounter += 1
+]
+</surveypage>
+
+<surveypage Q7>
+/ questions = [1 = frequency_7; 2 = duration_7]
+/ txcolor = orange
+/ stimulusframes = [1 = QuestionNumberReminderDPDR]
+/ ontrialend = [
+	values.QCounter += 1
+]
+</surveypage>
+
+<surveypage Q8>
+/ questions = [1 = frequency_8; 2 = duration_8]
+/ txcolor = orange
+/ stimulusframes = [1 = QuestionNumberReminderDPDR]
+/ ontrialend = [
+	values.QCounter += 1
+]
+</surveypage>
+
+<surveypage Q9>
+/ questions = [1 = frequency_9; 2 = duration_9]
+/ txcolor = orange
+/ stimulusframes = [1 = QuestionNumberReminderDPDR]
+/ ontrialend = [
+	values.QCounter += 1
+]
+</surveypage>
+
+<surveypage Q10>
+/ questions = [1 = frequency_10; 2 = duration_10]
+/ txcolor = orange
+/ stimulusframes = [1 = QuestionNumberReminderDPDR]
+/ ontrialend = [
+	values.QCounter += 1
+]
+</surveypage>
+
+<surveypage Q11>
+/ questions = [1 = frequency_11; 2 = duration_11]
+/ txcolor = orange
+/ stimulusframes = [1 = QuestionNumberReminderDPDR]
+/ ontrialend = [
+	values.QCounter += 1
+]
+</surveypage>
+
+<surveypage Q12>
+/ questions = [1 = frequency_12; 2 = duration_12]
+/ txcolor = orange
+/ stimulusframes = [1 = QuestionNumberReminderDPDR]
+/ ontrialend = [
+	values.QCounter += 1
+]
+</surveypage>
+
+<surveypage Q13>
+/ questions = [1 = frequency_13; 2 = duration_13]
+/ txcolor = orange
+/ stimulusframes = [1 = QuestionNumberReminderDPDR]
+/ ontrialend = [
+	values.QCounter += 1
+]
+</surveypage>
+
+<surveypage Q14>
+/ questions = [1 = frequency_14; 2 = duration_14]
+/ txcolor = orange
+/ stimulusframes = [1 = QuestionNumberReminderDPDR]
+/ ontrialend = [
+	values.QCounter += 1
+]
+</surveypage>
+
+<surveypage Q15>
+/ questions = [1 = frequency_15; 2 = duration_15]
+/ txcolor = orange
+/ stimulusframes = [1 = QuestionNumberReminderDPDR]
+/ ontrialend = [
+	values.QCounter += 1
+]
+</surveypage>
+
+<surveypage Q16>
+/ questions = [1 = frequency_16; 2 = duration_16]
+/ txcolor = orange
+/ stimulusframes = [1 = QuestionNumberReminderDPDR]
+/ ontrialend = [
+	values.QCounter += 1
+]
+</surveypage>
+
+<surveypage Q17>
+/ questions = [1 = frequency_17; 2 = duration_17]
+/ txcolor = orange
+/ stimulusframes = [1 = QuestionNumberReminderDPDR]
+/ ontrialend = [
+	values.QCounter += 1
+]
+</surveypage>
+
+<surveypage Q18>
+/ questions = [1 = frequency_18; 2 = duration_18]
+/ txcolor = orange
+/ stimulusframes = [1 = QuestionNumberReminderDPDR]
+/ ontrialend = [
+	values.QCounter += 1
+]
+</surveypage>
+
+<surveypage Q19>
+/ questions = [1 = frequency_19; 2 = duration_19]
+/ txcolor = orange
+/ stimulusframes = [1 = QuestionNumberReminderDPDR]
+/ ontrialend = [
+	values.QCounter += 1
+]
+</surveypage>
+
+<surveypage Q20>
+/ questions = [1 = frequency_20; 2 = duration_20]
+/ txcolor = orange
+/ stimulusframes = [1 = QuestionNumberReminderDPDR]
+/ ontrialend = [
+	values.QCounter += 1
+]
+</surveypage>
+
+<surveypage Q21>
+/ questions = [1 = frequency_21; 2 = duration_21]
+/ txcolor = orange
+/ stimulusframes = [1 = QuestionNumberReminderDPDR]
+/ ontrialend = [
+	values.QCounter += 1
+]
+</surveypage>
+
+<surveypage Q22>
+/ questions = [1 = frequency_22; 2 = duration_22]
+/ txcolor = orange
+/ stimulusframes = [1 = QuestionNumberReminderDPDR]
+/ ontrialend = [
+	values.QCounter += 1
+]
+</surveypage>
+
+<surveypage Q23>
+/ questions = [1 = frequency_23; 2 = duration_23]
+/ txcolor = orange
+/ stimulusframes = [1 = QuestionNumberReminderDPDR]
+/ ontrialend = [
+	values.QCounter += 1
+]
+</surveypage>
+
+<surveypage Q24>
+/ questions = [1 = frequency_24; 2 = duration_24]
+/ txcolor = orange
+/ stimulusframes = [1 = QuestionNumberReminderDPDR]
+/ ontrialend = [
+	values.QCounter += 1
+]
+</surveypage>
+
+<surveypage Q25>
+/ questions = [1 = frequency_25; 2 = duration_25]
+/ txcolor = orange
+/ stimulusframes = [1 = QuestionNumberReminderDPDR]
+/ ontrialend = [
+	values.QCounter += 1
+]
+</surveypage>
+
+<surveypage Q26>
+/ questions = [1 = frequency_26; 2 = duration_26]
+/ txcolor = orange
+/ stimulusframes = [1 = QuestionNumberReminderDPDR]
+/ ontrialend = [
+	values.QCounter += 1
+]
+</surveypage>
+
+<surveypage Q27>
+/ questions = [1 = frequency_27; 2 = duration_27]
+/ txcolor = orange
+/ stimulusframes = [1 = QuestionNumberReminderDPDR]
+/ ontrialend = [
+	values.QCounter += 1
+]
+</surveypage>
+
+<surveypage Q28>
+/ questions = [1 = frequency_28; 2 = duration_28]
+/ txcolor = orange
+/ stimulusframes = [1 = QuestionNumberReminderDPDR]
+/ ontrialend = [
+	values.QCounter += 1
+]
+</surveypage>
+
+<surveypage Q29>
+/ questions = [1 = frequency_29; 2 = duration_29]
+/ txcolor = orange
+/ stimulusframes = [1 = QuestionNumberReminderDPDR]
+/ ontrialend = [
+	values.QCounter += 1
+]
+</surveypage>
+
+
+<survey DPDR_final>
+/ showpagenumbers = false // so we don't get the page numbers and questions numbers, as that has already been provided with the Survey_Text element 
+/ showquestionnumbers = false
+/ pages = [
+1 = instCDQ;
+2 = Q1;
+3 = Q2;
+4 = Q3;
+5 = Q4;
+6 = Q5;
+7 = Q6;
+8 = Q7;
+9 = Q8;
+10 = Q9;
+11 = Q10;
+12 = Q11;
+13 = Q12;
+14 = Q13;
+15 = Q14;
+16 = Q15;
+17 = Q16;
+18 = Q17;
+19 = Q18;
+20 = Q19;
+21 = Q20;
+22 = Q21;
+23 = Q22;
+24 = Q23;
+25 = Q24;
+26 = Q25;
+27 = Q26;
+28 = Q27;
+29 = Q28;
+30 = Q29;
+]
+/ itemfontstyle = ("Arial", 3.1%, true, false, false, false, 5, 1)
+/ responsefontstyle = ("Arial", 3%, false, false, false, false, 5, 1)
+/ showbackbutton = false
+/ navigationbuttonfontstyle = ("Arial", 3%, false, false, false, false, 5, 1)
+/ navigationbuttonsize = (15%, 5%)
+/ nextlabel = "Next"
+/ showpagenumbers = false
+/ showquestionnumbers = false
+</survey>
